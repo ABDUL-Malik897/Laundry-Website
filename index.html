@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-4</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="home-bar">
+                <ul class="logo">Logo</ul>
+                <div class="list-content">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#page_2">Services</a></li>
+                <li><a href="#page_3">About Us</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </div>
+                <ul class="username">Username</ul>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="page_1">
+            <div class="left-div">
+            <h1>Revitalize Your <br> 
+            Clothes with Expert</h1>
+            <h1>Laundry Services!</h1>
+            <p> From premium dry cleaning to swift wash and fold, we <br>
+                deliver care and convenience. Schedule a pickup and <br>
+                rediscover the freshness of your clothes today!
+            </p>
+            <button type="submit"><ion-icon name="calendar-clear-outline" class="icon"></ion-icon><a href="#page_2">Book a service today!</a></button>
+            </div>
+            <div class="right-div">
+                <img src="https://www.shutterstock.com/shutterstock/videos/6683852/thumb/5.jpg?ip=x480" alt="Laundry">
+            </div>
+        </section>
+        <section class="page_1_footer">
+            <ul class="ach-sec">
+                <div>
+                <li class="ach">Our Achievements</li>
+                </div>
+                <div>
+                <li><span>15+</span><br>Laundry Services</li>
+                <li><span>240+</span><br>Happy Customers</li>
+                <li><span>2+ Yrs</span><br>Experience</li>
+                </div>
+            </ul>
+        </section>
+        <section class="page_2" id="page_2">
+            <div class="services-section">
+                <h2>Our Services</h2>
+                <p class="services-para">Click On The Add To Cart Button To Add The Services To Your Cart</p>
+                <ul class="services-list">
+                    <div class="btns">
+                    <li>🧺 Dry cleaning <span class="dot">&middot;</span><span class="price">₹200.00</span></li>
+                    <button type="submit" data-added="false" data-service="Dry Cleaning" data-price="200.00">Add Items<ion-icon name="add-circle-outline" class="icon"></ion-icon></button>
+                    </div>
+                    <div class="btns">
+                    <li>🧼 Wash & Fold<span class="dot">&middot;</span><span class="price">₹100.00</span></li>
+                    <button type="submit" data-added="false" data-service="Wash & Fold" data-price="100.00">Add Items<ion-icon name="add-circle-outline" class="icon"></ion-icon></button>
+                    </div>
+                    <div class="btns">
+                    <li>👕 Ironing<span class="dot">&middot;</span><span class="price">₹30.00</span></li>
+                    <button type="submit" data-added="false" data-service="Ironing" data-price="30.00">Add Items<ion-icon name="add-circle-outline" class="icon"></ion-icon></button>
+                    </div>
+                    <div class="btns">
+                    <li>🩸 Stain Removal<span class="dot">&middot;</span><span class="price">₹500.00</span></li>
+                    <button type="submit" data-added="false" data-service="Stain Removal" data-price="500.00">Add Items<ion-icon name="add-circle-outline" class="icon"></ion-icon></button>
+                    </div>
+                    <div class="btns">
+                    <li>🧥 Leather & Suede Cleaning <span class="dot">&middot;</span><span class="price">₹999.00</span></li>
+                    <button type="submit" data-added="false" data-service="Leather & Suede Cleaning" data-price="999.00">Add Items<ion-icon name="add-circle-outline" class="icon"></ion-icon></button>
+                    </div>
+                    <div class="btns">
+                    <li>👗 Wedding Dress Cleaning <span class="dot">&middot;</span><span class="price">₹2800.00</span></li>
+                    <button type="submit" data-added="false" data-service="Wedding Dress Cleaning" data-price="2800.00">Add Items<ion-icon name="add-circle-outline" class="icon"></ion-icon></button>
+                    </div>
+                </ul>
+                <p class="services-para"><ion-icon name="alert-circle-outline" class="icon"></ion-icon>Add the items to the cart and book now</p>
+            </div>
+            <div class="added_section">
+            <div class="added_table">
+                <h3>Added Items</h3>
+                <div class="table">
+                <table>
+                    <thead>
+                    <tr>
+                        <th id="serial">S.No</th>
+                        <th id="s_name">Service Name</th>
+                        <th id="s_price">Price</th>
+                    </tr>
+                    </thead>
+                    <tbody id="addedItemsBody" class="table_body"></tbody>
+                </table>
+                </div>
+                <div class="Total">
+                    <p>Total Amount</p>
+                    <p id="totalAmt">₹0.00</p>
+                </div>
+            </div>
+            <div class="booking">
+                <h5>Book Now</h5>
+                <form action="#">
+                <label for="name" class="l_name">Full Name</label>
+                <input type="text" name="name" placeholder="John Doe" required class="name">
+                <div class="gap_1">
+                <label for="email"class="l_email">Email</label>
+                <input type="email" name="email" placeholder="mail@gmail.com" required class="email">
+                <label for="tel" class="l_tel">Phone Number</label>
+                <input type="tel" name="tel" placeholder="0000000000" required class="tel">
+                </div>
+                <input type="submit" value="Book now">
+                </form>
+            </div>
+            </div>
+        </section>
+        <section class="page_3" id="page_3">
+            <div class="newsletter">
+                <div class="row">
+                    <p><img src="images/services.jpeg" alt="Services"></p>
+                    <h4>Premium Services</h4>
+                    <p>Elevate your wardrobe with our meticulous dry cleaning, ensuring garments look and feel as good as new.</p>
+                </div>
+                <div class="row">
+                    <p><img src="images/support.jpeg" alt="Support"></p>
+                    <h4>Quick Support</h4>
+                    <p>We're committed to providing prompt solutions to ensure your experience is smooth and worry-free</p>
+                </div>
+                <div class="row">
+                    <p><img src="images/delivery.jpeg" alt="free_delivery"></p>
+                    <h4>Hassle Free Delivery</h4>
+                    <p>Enjoy seamless service with our convenient pickup and delivery options, tailored  to your schedule.</p>
+                </div>
+                <div class="row">
+                    <p><img src="images/prices.jpeg" alt="prices"></p>
+                    <h4>Affordable Prices</h4>
+                    <p>Experience exceptional care without breaking the bank - our afforable prices amke laundry day stress-free.</p>
+                </div>
+            </div>
+            <div class="newsletter_form" id="contact">
+                <div>
+                <h2>Subscribe to our <br>newsletter.</h2>
+                </div>
+                <div>
+                <input type="text" value="Full Name">
+                <input type="email" value="Email">
+                <br>
+                <input type="submit" value="Subscribe">
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="logo_wala">
+            <div>
+            <h2>Logo</h2>
+            </div>
+            <div>
+                <h5>About Us</h5>
+                <p>Lorem ipsum dolor, sit amet <br> consectetur adipisicing elit. Aliquid.</p>
+            </div>
+        </div>
+        <div class="link_wala">
+            <h4>Important Links</h4>
+            <ul>
+                <li>About us</li>
+                <li>Contact us</li>
+                <li>Privacy Policy</li>
+                <li>Terms of use</li>
+                <li>Refund Policy</li>
+            </ul>
+        </div>
+        <div class="contact_wala">
+            <h4>Contact</h4>
+            <p>mail@site.com</p>
+            <p>+91 91234 56780</p>
+        </div>
+        <div class="follow_wala">
+            <h4>Follow Us</h4>
+            <ul>
+                <li><ion-icon name="logo-instagram"></ion-icon></li>
+                <li><ion-icon name="logo-facebook"></ion-icon></li>
+                <li><ion-icon name="logo-twitter"></ion-icon></li>
+                <li><ion-icon name="logo-youtube"></ion-icon></li>
+            </ul>
+        </div>
+    </footer>
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+$("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+    event.preventDefault();
+
+      // Store hash
+    var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+    $('html, body').animate({
+        scrollTop: $(hash).offset().top
+    }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+    });
+    } // End if
+});
+});
+</script>
+<script src="script.js"></script>
+</body>
+</html>
